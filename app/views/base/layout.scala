@@ -229,7 +229,7 @@ object layout {
           metaCsp(csp),
           metaThemeColor,
           st.headTitle {
-            if (ctx.blind) "lichess"
+            if (ctx.blind) "newchess"
             else if (netConfig.isProd) fullTitle | s"$title • newchess.fun"
             else s"[dev] ${fullTitle | s"$title • dev.newchess.fun"}"
           },
